@@ -1,0 +1,117 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chart</title>
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./CSS/chart.css" />
+  </head>
+  <body>
+    <div id="general">
+      <div id="navbar">
+        <div id="logo">
+          <div class="icon"><i class="bx bxs-pie-chart-alt-2"></i></div>
+          <div class="slogan">
+            Your <br />
+            <span style="color: white"> Stock </span><br />
+            Manager
+          </div>
+        </div>
+        <ul>
+          <li class="navlist">
+            <i class="bx bxs-home"></i> <a href="dashboard.html">Home</a>
+          </li>
+          <div id="selected">
+            <li class="navlist-selected">
+              <i class="bx bxs-pie-chart-alt-2"></i> <a href="">Chart</a>
+            </li>
+          </div>
+          <li class="navlist">
+            <i class="bx bx-money"></i>
+            <a href="table.html">Daily Transactions</a>
+          </li>
+          <li class="navlist">
+            <i class="bx bx-line-chart"></i> <a href="stock.html">Stock</a>
+          </li>
+          <hr id="line" />
+          <li><i class="bx bx-help-circle"></i> Help & Support</li>
+        </ul>
+        <div id="mode-box">
+          <div id="circle"><i class="bx bx-moon"></i></div>
+          <p>Dark mode</p>
+          <div id="slide-button">
+            <div class="box">
+              <div class="circle"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="body">
+        <div id="search-bar">
+          <input type="search" placeholder="Search..." />
+        </div>
+        <div id="legend-box">
+          <div class="legend-box-data">
+            <div class="box-color-a"></div>
+            <h6>High</h6>
+          </div>
+          <div class="legend-box-data">
+            <div class="box-color-b"></div>
+            <h6>Moderately High</h6>
+          </div>
+          <div class="legend-box-data">
+            <div class="box-color-c"></div>
+            <h6>Moderately Low</h6>
+          </div>
+          <div class="legend-box-data">
+            <div class="box-color-d"></div>
+            <h6>Low</h6>
+          </div>
+        </div>
+        <div id="chart">
+          <div id="mon">
+            <div class="bar"></div>
+            <div class="bar-color1"></div>
+            <h5>Mon</h5>
+          </div>
+          <div id="tue">
+            <div class="bar"></div>
+            <div class="bar-color2"></div>
+            <h5>Tue</h5>
+          </div>
+          <div id="wed">
+            <div class="bar"></div>
+            <div class="bar-color3"></div>
+            <h5>Wed</h5>
+          </div>
+          <div id="thu">
+            <div class="bar"></div>
+            <div class="bar-color4"></div>
+            <h5>Thu</h5>
+          </div>
+          <div id="fri">
+            <div class="bar"></div>
+            <div class="bar-color5"></div>
+            <h5>Fri</h5>
+          </div>
+          <div id="sat">
+            <div class="bar"></div>
+            <div class="bar-color6"></div>
+            <h5>Sat</h5>
+          </div>
+          <div id="sun">
+            <div class="bar"></div>
+            <div class="bar-color7"></div>
+            <h5>Sun</h5>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

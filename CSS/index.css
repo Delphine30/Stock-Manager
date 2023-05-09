@@ -1,0 +1,148 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: sans-serif;
+}
+.header {
+  width: 100%;
+  height: 15vh;
+  display: flex;
+  justify-content: space-between;
+  padding: 17px 50px 0 50px;
+}
+#login-buttons {
+  margin-left: 50px;
+}
+#blue-in {
+  background-color: #0606ff;
+  color: white;
+  padding: 15px 30px;
+  border: none;
+  border-radius: 10px;
+  font-size: 15px;
+  font-weight: bolder;
+  margin-right: 20px;
+}
+#blue-out {
+  background-color: rgba(255, 255, 255, 0);
+  color: #0606ff;
+  padding: 12px 27px;
+  border-style: 2px solid;
+  border-color: #0606ff;
+  border-radius: 10px;
+  font-size: 15px;
+  font-weight: bolder;
+}
+#blue-in a {
+  text-decoration: none;
+  color: white;
+}
+#blue-out a {
+  text-decoration: none;
+  color: #0606ff;
+}
+#slogan {
+  font-size: 20px;
+  font-weight: bolder;
+  display: flex;
+  gap: 5px;
+}
+#slogan i {
+  color: #0606ff;
+  font-size: 70px;
+}
+#logo-color {
+  color: #0606ff;
+}
+
+.home-img {
+  width: 100%;
+  height: 85vh;
+  background-image: url(../Images/pexels-rodnae-productions-7948036.jpg);
+  background-position: center;
+  background-size: cover;
+}
+.overlay {
+  width: 100%;
+  height: 85vh;
+  background-color: rgba(0, 0, 0, 0.795);
+  color: white;
+  position: absolute;
+  margin-top: -85vh;
+  clip-path: polygon(0% 0%, 75% 0%, 50% 100%, 0% 100%);
+  padding: 120px 0 0 90px;
+}
+.overlay p {
+  font-weight: bold;
+  font-size: 20px;
+}
+.overlay h1 {
+  font-size: 40px;
+}
+#card1 {
+  width: 30%;
+  height: 50vh;
+  border-radius: 20px;
+  box-shadow: 1px 1px 2px 2px grey;
+}
+.card-container {
+  width: 30%;
+  height: 50vh;
+  border-radius: 20px;
+  box-shadow: 1px 1px 2px 2px rgba(128, 128, 128, 0.76);
+  perspective: 1000px;
+}
+#card1-back {
+  background-color: rgb(128, 128, 128);
+  transform: rotateY(180deg);
+}
+#card1-front {
+  background-color: white;
+}
+.cards {
+  display: flex;
+  gap: 50px;
+  margin: 70px 0 70px 30px;
+}
+.blue {
+  height: 5vh;
+  border-radius: 20px 20px 0 0;
+  background-color: rgb(128, 128, 128);
+}
+.white {
+  height: 5vh;
+  border-radius: 20px 20px 0 0;
+  background-color: white;
+}
+.card-fb {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: all 1s;
+  transform-style: preserve-3d;
+}
+.card-container:hover .card-fb {
+  transform: rotateY(180deg);
+  transition: all 1s;
+}
+#card1-back,
+#card1-front {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  border-radius: 20px;
+}
+#card1-back p {
+  font-size: 20px;
+  font-weight: bold;
+  padding-top: 70px;
+}
+#card1-front h2 {
+  padding-top: 70px;
+}
