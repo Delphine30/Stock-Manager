@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -7,75 +8,154 @@
   
     <title>Document</title>
 <link rel="stylesheet" href="./CSS/stock.css">
-<link rel="stylesheet" href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+
+<link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 
 </head>
 <body>
 
-<!-- <div class="box-container">  -->
-        <div class="container">
+<div class="header">
+<i class="ion-search"></i>
+</div>
 <div class="header-1">
 <p id="word">Stock Available</p>
+</div> 
+
+<div id="general">
+    <div id="navbar">
+      <div id="logo">
+        <div class="icon"><i class="bx bxs-pie-chart-alt-2"></i></div>
+        <div class="slogan">
+          Your <br />
+          <span style="color: white"> Stock </span><br />
+          Manager
+        </div>
+      </div>
+      <ul>
+        <li class="navlist">
+          <i class="bx bxs-home"></i> <a href="dashboard.html">Home</a>
+        </li>
+        <li class="navlist">
+            <i class="bx bxs-pie-chart-alt-2"></i> <a href="stock.html">Chart</a>
+          </li>
+        <!-- <div id="selected">
+          <li class="navlist-selected">
+            <i class="bx bxs-pie-chart-alt-2"></i> <a href="">Chart</a>
+          </li>
+        </div> -->
+        <li class="navlist">
+          <i class="bx bx-money"></i>
+          <a href="table.html">Daily Transactions</a>
+        </li>
+        <div id="selected">
+            <li class="navlist-selected">
+                <i class="bx bx-line-chart"></i> <a href="">Stock</a>
+            </li>
+          </div>
+        <!-- <li class="navlist">
+          <i class="bx bx-line-chart"></i> <a href="stock.html">Stock</a>
+        </li> -->
+        <hr id="line" />
+        <li><i class="bx bx-help-circle"></i> Help & Support</li>
+      </ul>
+      <div id="mode-box">
+        <div id="circle"><i class="bx bx-moon"></i></div>
+        <p>Dark mode</p>
+        <div id="slide-button">
+          <div class="box">
+            <div class="circle"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="body">
+      <div id="search-bar">
+        <input type="search" placeholder="Search..." />
+        <div class="container">
+            <div class="header">
+                <i class="ion-search"></i>
+                </div>
+                <div class="header-1">
+                <p id="word">Stock Available</p>
+                </div> 
+        <table >
+        <tr>
+            <th>Product name</th>
+            <th>Quantity</th>
+            <th>Price/unit</th>
+            <th>Totol price</th>
+            </tr>
+            <tr>
+            <td>Rice</td>
+            <td>50kg</td>
+            <td>1000Frw</td>
+            <td>50000Frw</td>
+            </tr>
+            <tr>
+            <td>Beans</td>
+            <td>70kg</td>
+            <td>1300Frw</td>
+            <td>91000Frw</td>
+            </tr>
+            <tr>
+            <td>Cooking oil</td>
+            <td>20 Ltrs</td>
+            <td>4000Frw</td>
+            <td>80000Frw</td>
+            </tr>
+            <tr>
+            <td>Irish Potatoes</td>
+            <td>100kg</td>
+            <td>500Frw</td>
+            <td>50000Frw</td>
+            </tr>
+            <tr>
+            <td>Maise</td>
+            <td>60kg</td>
+            <td>800Frw</td>
+            <td>48000Frw</td>
+            
+            </tr>
+            </table>
+      </div></div>
+    </div>
+  </div>
+
+
+
+
 </div>
 
-<table>
-
-<tr>
-<th>Product name</th>
-<th>Quantity</th>
-<th>Price/unit</th>
-<th>Totol price</th>
-</tr>
-<tr>
-<td>Rice</td>
-<td>50kg</td>
-<td>1000Frw</td>
-<td>50000Frw</td>
-</tr>
-<tr>
-<td>Beans</td>
-<td>70kg</td>
-<td>1300Frw</td>
-<td>91000Frw</td>
-</tr>
-<tr>
-<td>Cooking oil</td>
-<td>20 Ltrs</td>
-<td>4000Frw</td>
-<td>80000Frw</td>
-</tr>
-<tr>
-<td>Irish Potatoes</td>
-<td>100kg</td>
-<td>500Frw</td>
-<td>50000Frw</td>
-</tr>
-<tr>
-<td>Maise</td>
-<td>60kg</td>
-<td>800Frw</td>
-<td>48000Frw</td>
-
-</tr>
-</table>
-</div>
-
-</body>
 
 
-<div class="All-left">
-    <p>your<br>Stock<br>Manager</p><br><br>
+<!-- <div class="All-left">
+    <div class="one">
+     <p>your<br>Stock<br>Manager</p><br><br>
 
     <i class="ion-home"></i>
+</div><br><br><br>
+<div class="two">
     <p>Home</p> <br>
-
     <i class="ion-pie-graph"></i>
+</div><br><br>
+<div class="three">
     <p>Chart</p><br>
     <i class="ion-social-usd"></i>
-    <p>Dairy Transaction</p><br>
+</div><br><br>
+<div class="four">
+    <p>Dairy <br>Transaction</p><br>
     <i class=""></i>
+</div><br><br>
+<div class="five">
     <p>Stock</p><br>
+</div><br>
+<div class="six">
     <i class="ion-help"></i>
-    <p>Help$ Support</p><br>
+    <p>Help$<br> Support</p>
 </div>
+    
+</div> 
+</div> -->
+</body>
+
 </html>
